@@ -171,10 +171,6 @@ class CartService
                 $oldCartItem->product_item_id = $newProductItemId;
                 $oldCartItem->save();
             }
-
-            // Delete the old cart item since its data has been merged
-            $oldCartItem->delete();
-
             return $this->true;
         }
 
