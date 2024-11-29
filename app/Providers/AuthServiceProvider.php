@@ -29,7 +29,7 @@ class AuthServiceProvider extends ServiceProvider
             // get user email
             $email = $user->email;
 
-            return 'http://localhost:3000/recovery/'.$email.'?token='.$token;
+            return 'https://salmon-water-027c64f00.4.azurestaticapps.net/recovery/'.$email.'?token='.$token;
         });
     }
 }
